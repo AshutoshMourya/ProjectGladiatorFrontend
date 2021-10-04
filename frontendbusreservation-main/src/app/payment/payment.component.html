@@ -1,0 +1,62 @@
+
+<div>
+&nbsp; &nbsp; &nbsp; &nbsp; <div class="container">
+    <div class="row">
+        <div class="col-xs-20 col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="text-align: center; " >
+                    <h3 class="panel-title">
+                        Payment 
+                    </h3>
+                    <hr>
+                </div>
+                <div [align]="'center'">
+                <ul class=" nav nav-pills nav-stacked" style="text-align: center;">
+                    <li class="active" style="text-align: center; font-size: medium;"><label
+                            style=" font-size: 15px; ">&nbsp; <br> &nbsp; &nbsp; &nbsp; &nbsp;Amount to be paid:</label>
+                         {{Fare}}
+                    </li>
+                </ul>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <div class="col-xs-15 col-md-8">
+                            <div id="cardpayment">
+                                <br><label for="cardNumber"> CARD NUMBER</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="cardNumber"
+                                        placeholder="Valid Card Number" required autofocus minlength="16"/>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-7 col-md-7">
+                                        <div class="form-group">
+                                            <br><label for="expityMonth"> EXPIRY DATE</label>
+                                            
+                                                <input type="text" class="form-control" id="expityMonth" placeholder="MM/YY" required />
+                                            </div>
+                                            <!-- <div class="col-xs-6 col-lg-6 pl-ziro">
+                                                <input type="text" class="form-control" id="expityYear" placeholder="YY"  required />
+                                            </div> -->
+                                        
+                                    </div>
+                                    <div class="col-xs-5 col-md-5 pull-right">
+                                        <div class="form-group">
+                                            <br><label for="cvCode"> CVV CODE</label>
+                                            <input type="password" class="form-control" id="cvCode" placeholder="CVV" minlength="3" required />
+                                        </div>
+                                    </div>
+                                </div><br>
+
+                                <input type="button" (click)="submitForm()" id="=button" value="Pay" routerLink='travelguidelines' style="background-color: green;">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+</div>
+<img src="\assets\sslcommerz_logo.png" >
